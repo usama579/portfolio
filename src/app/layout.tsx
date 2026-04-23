@@ -13,14 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Usama Tariq - React Native & Full Stack Developer",
+  title: "Usama Tariq - React Native Developer",
   description: "Professional React Native, Android Kotlin, and Full Stack Developer with 5+ years experience. Specialized in cross-platform mobile development, web applications, and scalable backend solutions. 150K+ app downloads, 500+ clients served.",
   keywords: ["React Native Developer", "Android Kotlin", "Full Stack Developer", "Mobile App Development", "Web Development", "Node.js", "React.js", "Next.js"],
   authors: [{ name: "Usama Tariq" }],
   creator: "Usama Tariq",
   publisher: "Usama Tariq",
   openGraph: {
-    title: "Usama Tariq - React Native & Full Stack Developer",
+    title: "Usama Tariq - React Native Developer",
     description: "Professional React Native, Android Kotlin, and Full Stack Developer with 5+ years experience. Transform your ideas into successful digital products.",
     url: "https://usama-portfolio.vercel.app",
     siteName: "Usama Tariq Portfolio",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Usama Tariq - React Native & Full Stack Developer",
+    title: "Usama Tariq - React Native Developer",
     description: "Professional React Native, Android Kotlin, and Full Stack Developer with 5+ years experience.",
     creator: "@usama579",
   },
