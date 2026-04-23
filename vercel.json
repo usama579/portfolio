@@ -1,0 +1,17 @@
+{
+  "buildCommand": "next build --webpack",
+  "framework": "nextjs",
+  "functions": {
+    "app/page.tsx": {
+      "memory": 1024
+    }
+  },
+  "images": {
+    "remotePatterns": [
+      {
+        "protocol": "https",
+        "hostname": "**"
+      }
+    ]
+  }
+}
