@@ -40,7 +40,7 @@ export default function Hero() {
   return (
     <motion.section
       ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen pt-20 flex items-center justify-center overflow-hidden"
       style={{ y, opacity }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-purple-900/50 to-blue-900/50"></div>

@@ -22,7 +22,7 @@ import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
 
 // Import modular components
-import { Hero, Skills, Projects, Services, Contact } from '@/components';
+import { Hero, Skills, Projects, Services, Contact, FAQ, Process } from '@/components';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -205,8 +205,10 @@ export default function Home() {
               <Link href="#about" className="text-gray-300 hover:text-white transition-colors">About</Link>
               <Link href="#services" className="text-gray-300 hover:text-white transition-colors">Services</Link>
               <Link href="#projects" className="text-gray-300 hover:text-white transition-colors">Portfolio</Link>
+              <Link href="#process" className="text-gray-300 hover:text-white transition-colors">Process</Link>
               <Link href="#experience" className="text-gray-300 hover:text-white transition-colors">Experience</Link>
               <Link href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Reviews</Link>
+              <Link href="#faq" className="text-gray-300 hover:text-white transition-colors">FAQ</Link>
               <Link href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link>
             </motion.div>
           </div>
@@ -254,6 +256,9 @@ export default function Home() {
 
       {/* Skills Section */}
       <Skills />
+
+      {/* Process Section */}
+      <Process />
 
       {/* Experience Timeline */}
       <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-black/20">
@@ -427,19 +432,82 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <FAQ />
+
       {/* Contact Section */}
       <Contact />
 
       {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-white/10">
+      <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-white/10 bg-black/30">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-400 mb-4 md:mb-0">
-              © 2024 Usama Tariq. Built with Next.js, TypeScript, and Tailwind CSS.
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <h3 className="text-xl font-bold text-white mb-4">Usama Tariq</h3>
+              <p className="text-gray-400 mb-4">
+                Full-stack developer specializing in React Native, Android Kotlin, and modern web technologies.
+                Turning ideas into successful digital products.
+              </p>
+              <div className="flex space-x-4">
+                <a
+                  href="https://github.com/usama579"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/usama-tariq-is579/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href="https://wa.me/923414834446"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  WhatsApp
+                </a>
+              </div>
             </div>
-            <div className="flex items-center space-x-4">
-              <Heart className="w-4 h-4 text-red-400" />
-              <span className="text-gray-400">Made with passion for great code</span>
+
+            <div>
+              <h4 className="text-lg font-semibold text-white mb-4">Services</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li>React Native Development</li>
+                <li>Android Kotlin Apps</li>
+                <li>Web Development</li>
+                <li>Backend Development</li>
+                <li>Full-Stack Solutions</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li><Link href="#about" className="hover:text-white transition-colors">About</Link></li>
+                <li><Link href="#projects" className="hover:text-white transition-colors">Portfolio</Link></li>
+                <li><Link href="#process" className="hover:text-white transition-colors">Process</Link></li>
+                <li><Link href="#faq" className="hover:text-white transition-colors">FAQ</Link></li>
+                <li><Link href="#contact" className="hover:text-white transition-colors">Contact</Link></li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-white/10 pt-6">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <div className="text-gray-400 mb-4 md:mb-0">
+                © 2024 Usama Tariq. All rights reserved. Built with Next.js, TypeScript, and Tailwind CSS.
+              </div>
+              <div className="flex items-center space-x-4">
+                <Heart className="w-4 h-4 text-red-400" />
+                <span className="text-gray-400">Made with passion for great code</span>
+              </div>
             </div>
           </div>
         </div>

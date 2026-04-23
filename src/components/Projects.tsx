@@ -125,14 +125,14 @@ export default function Projects() {
     {
       id: 3,
       title: 'Meo Health - Long COVID Care Platform',
-      description: 'Specialized healthcare application for long COVID patients with symptom tracking and care management.',
-      longDescription: 'Revolutionary platform designed specifically for long COVID patients, providing comprehensive symptom tracking, personalized care plans, and connection with specialized healthcare providers. Features real-time health monitoring and evidence-based treatment protocols.',
-      tech: ['React Native', 'Node.js', 'PostgreSQL', 'HealthKit', 'Analytics', 'WebRTC'],
-      category: 'mobile',
+      description: 'Full-stack healthcare platform for long COVID patients with web portal, iOS and Android mobile apps.',
+      longDescription: 'Revolutionary full-stack platform designed specifically for long COVID patients, providing comprehensive symptom tracking, personalized care plans, and connection with specialized healthcare providers. Available as web platform, iOS app, and Android app with real-time health monitoring and evidence-based treatment protocols.',
+      tech: ['React Native', 'Node.js', 'PostgreSQL', 'HealthKit', 'Analytics', 'WebRTC', 'Next.js'],
+      category: 'web',
       status: 'Live',
       timeline: '10 months',
-      role: 'Lead Mobile Developer',
-      challenges: ['Complex health data', 'HIPAA compliance', 'Real-time monitoring', 'Medical integration'],
+      role: 'Full-Stack Developer',
+      challenges: ['Complex health data', 'HIPAA compliance', 'Real-time monitoring', 'Medical integration', 'Cross-platform sync'],
       results: ['5K+ patients helped', 'Medical professional adoption', 'Healthcare partnerships', 'Clinical validation'],
       liveUrl: 'https://apps.apple.com/us/app/meo-health/id6468690625',
       androidUrl: 'https://play.google.com/store/apps/details?id=com.meohealth',
@@ -261,21 +261,6 @@ export default function Projects() {
       challenges: ['Blockchain integration', 'Smart contracts', 'Transaction security', 'Compliance'],
       results: ['$500K+ grants processed', 'Zero security incidents', 'Multi-chain support', 'Automated workflows'],
       liveUrl: 'https://stacks-grant-backend.herokuapp.com',
-      featured: true
-    },
-    {
-      id: 11,
-      title: 'Meo Health Backend System',
-      description: 'Healthcare platform backend supporting long COVID patient management with comprehensive medical data integration.',
-      longDescription: 'Enterprise healthcare backend powering the Meo Health platform for long COVID patient care. Features secure medical record management, symptom tracking, provider integration, and HIPAA-compliant data processing.',
-      tech: ['Node.js', 'Express.js', 'PostgreSQL', 'HealthKit API', 'FHIR Integration', 'AWS'],
-      category: 'backend',
-      status: 'Live',
-      timeline: '8 months',
-      role: 'Senior Backend Developer',
-      challenges: ['HIPAA compliance', 'Medical data integration', 'Real-time monitoring', 'Provider APIs'],
-      results: ['5K+ patients served', 'Medical provider integration', 'Clinical validation', 'Insurance partnerships'],
-      liveUrl: 'http://meo-health.com',
       featured: true
     },
     {
@@ -432,8 +417,40 @@ export default function Projects() {
                     </div>
 
                     <div className="flex flex-col space-y-3">
-                      {/* Show dual buttons for React Native apps with both iOS and Android */}
-                      {(project.androidUrl && project.liveUrl && project.category === 'mobile') ? (
+                      {/* Show triple buttons for full-stack platforms with web, iOS and Android */}
+                      {(project.webUrl && project.androidUrl && project.liveUrl) ? (
+                        <div className="flex flex-col space-y-2">
+                          <a
+                            href={project.webUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-purple-600 hover:bg-purple-700 text-white py-3 px-4 rounded-lg flex items-center justify-center transition-all font-medium"
+                          >
+                            <ExternalLink className="w-4 h-4 mr-2" />
+                            View Website
+                          </a>
+                          <div className="flex space-x-3">
+                            <a
+                              href={project.liveUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg flex items-center justify-center transition-all font-medium"
+                            >
+                              <ExternalLink className="w-4 h-4 mr-2" />
+                              iOS App
+                            </a>
+                            <a
+                              href={project.androidUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex-1 bg-green-600 hover:bg-green-700 text-white py-3 px-4 rounded-lg flex items-center justify-center transition-all font-medium"
+                            >
+                              <ExternalLink className="w-4 h-4 mr-2" />
+                              Android App
+                            </a>
+                          </div>
+                        </div>
+                      ) : (project.androidUrl && project.liveUrl && project.category === 'mobile') ? (
                         <div className="flex space-x-3">
                           <a
                             href={project.liveUrl}
@@ -634,7 +651,39 @@ export default function Projects() {
                       </a>
                     )}
 
-                    {(selectedProject.androidUrl && selectedProject.liveUrl && selectedProject.category !== 'android' && selectedProject.category !== 'backend') && (
+                    {/* Show all platform buttons for full-stack projects */}
+                    {(selectedProject.webUrl && selectedProject.androidUrl && selectedProject.liveUrl) && (
+                      <div className="space-y-3">
+                        <a
+                          href={selectedProject.webUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-6 rounded-lg flex items-center justify-center transition-all font-medium"
+                        >
+                          <ExternalLink className="w-5 h-5 mr-3" />
+                          View Website
+                        </a>
+                        <div className="flex space-x-4">
+                          <a
+                            href={selectedProject.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg flex items-center justify-center transition-all font-medium"
+                          >
+                            Download for iOS
+                          </a>
+                          <a
+                            href={selectedProject.androidUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1 bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg flex items-center justify-center transition-all font-medium"
+                          >
+                            Download for Android
+                          </a>
+                        </div>
+                      </div>
+                    )}
+                    {(selectedProject.androidUrl && selectedProject.liveUrl && selectedProject.category !== 'android' && selectedProject.category !== 'backend' && !selectedProject.webUrl) && (
                       <div className="flex space-x-4">
                         <a
                           href={selectedProject.liveUrl}
