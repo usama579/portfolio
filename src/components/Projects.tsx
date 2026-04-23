@@ -128,7 +128,6 @@ export default function Projects() {
       description: 'Full-stack healthcare platform for long COVID patients with web portal, iOS and Android mobile apps.',
       longDescription: 'Revolutionary full-stack platform designed specifically for long COVID patients, providing comprehensive symptom tracking, personalized care plans, and connection with specialized healthcare providers. Available as web platform, iOS app, and Android app with real-time health monitoring and evidence-based treatment protocols.',
       tech: ['React Native', 'Node.js', 'PostgreSQL', 'HealthKit', 'Analytics', 'WebRTC', 'Next.js'],
-      category: 'web',
       status: 'Live',
       timeline: '10 months',
       role: 'Full-Stack Developer',
