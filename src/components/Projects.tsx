@@ -175,22 +175,6 @@ export default function Projects() {
     },
     {
       id: 5,
-      title: 'Baby Care - Health & Development',
-      description: 'Comprehensive baby care application for tracking health, development, and milestones.',
-      longDescription: 'Complete baby care solution providing health tracking, developmental milestone monitoring, feeding schedules, and pediatric guidance. Features growth charts, vaccination reminders, and healthcare provider connectivity.',
-      tech: ['Android Kotlin', 'Jetpack Compose', 'Room Database', 'Firebase', 'HealthKit'],
-      images: ['/projects/babycareOne.png', '/projects/babycareTwo.png', '/projects/babycareThree.png'],
-      category: 'android',
-      status: 'Live',
-      timeline: '4 months',
-      role: 'Android Developer',
-      challenges: ['Data synchronization', 'Offline access', 'Health data privacy', 'User experience'],
-      results: ['10K+ downloads', '4.5 star rating', 'Parent community', 'Healthcare integration'],
-      androidUrl: 'https://play.google.com/store/apps/details?id=com.baby_care',
-      featured: true
-    },
-    {
-      id: 6,
       title: 'Baby Care Backend API',
       description: 'Scalable Node.js backend API powering baby care application with health tracking and pediatric data management.',
       longDescription: 'Robust backend infrastructure supporting the Baby Care mobile app with secure data storage, pediatric growth charts, vaccination schedules, and healthcare provider integration. Built with Node.js and MongoDB for optimal performance.',
@@ -205,7 +189,7 @@ export default function Projects() {
       featured: true
     },
     {
-      id: 7,
+      id: 6,
       title: 'UCare Skin Backend API',
       description: 'Advanced skincare platform backend with AI-powered skin analysis and personalized treatment recommendations.',
       longDescription: 'Sophisticated backend system powering a skincare platform with machine learning algorithms for skin analysis, treatment tracking, and personalized product recommendations. Features secure user management and real-time data processing.',
@@ -220,7 +204,7 @@ export default function Projects() {
       featured: true
     },
     {
-      id: 8,
+      id: 7,
       title: 'Stacks Grant Platform Backend',
       description: 'Blockchain grant management system backend with smart contract integration and automated funding workflows.',
       longDescription: 'Enterprise-grade backend for blockchain-based grant management platform. Handles crypto transactions, smart contract interactions, automated funding distributions, and compliance reporting for decentralized grant programs.',
@@ -235,7 +219,7 @@ export default function Projects() {
       featured: true
     },
     {
-      id: 9,
+      id: 8,
       title: 'UCare Skin Production API',
       description: 'Production-grade skincare platform API serving global users with advanced dermatological features and analytics.',
       longDescription: 'High-performance production API for the UCare Skin platform serving users worldwide. Features advanced skincare analysis, product recommendations, dermatologist consultations, and comprehensive user analytics.',
@@ -250,7 +234,7 @@ export default function Projects() {
       featured: true
     },
     {
-      id: 10,
+      id: 9,
       title: 'CropWise - Smart Agriculture Platform',
       description: 'Revolutionary AgriTech mobile platform for smart farming with IoT integration and crop management.',
       longDescription: 'Advanced agriculture management application that empowers farmers with real-time crop monitoring, weather predictions, and data-driven farming decisions. Features IoT sensor integration, crop disease detection, and yield optimization recommendations.',
@@ -266,7 +250,7 @@ export default function Projects() {
       featured: true
     },
     {
-      id: 11,
+      id: 10,
       title: 'Pixel Dancer - Photo Editor',
       description: 'Advanced photo editing and animation app with professional-grade features and modern UI.',
       longDescription: 'Professional photo editing platform bringing desktop-quality features to mobile devices. Features advanced filters, animations, AI-powered enhancements, and cloud synchronization for creative professionals and enthusiasts.',
@@ -279,6 +263,22 @@ export default function Projects() {
       challenges: ['Performance optimization', 'Complex animations', 'Memory management', 'UI/UX design'],
       results: ['50K+ downloads', '4.6 star rating', 'Featured app', 'Professional adoption'],
       androidUrl: 'https://play.google.com/store/apps/details?id=com.rainmin.pd',
+      featured: true
+    },
+    {
+      id: 11,
+      title: 'Baby Care - Health & Development',
+      description: 'Comprehensive baby care application for tracking health, development, and milestones.',
+      longDescription: 'Complete baby care solution providing health tracking, developmental milestone monitoring, feeding schedules, and pediatric guidance. Features growth charts, vaccination reminders, and healthcare provider connectivity.',
+      tech: ['Android Kotlin', 'Jetpack Compose', 'Room Database', 'Firebase', 'HealthKit'],
+      images: ['/projects/babycareOne.png', '/projects/babycareTwo.png', '/projects/babycareThree.png'],
+      category: 'android',
+      status: 'Live',
+      timeline: '4 months',
+      role: 'Android Developer',
+      challenges: ['Data synchronization', 'Offline access', 'Health data privacy', 'User experience'],
+      results: ['10K+ downloads', '4.5 star rating', 'Parent community', 'Healthcare integration'],
+      androidUrl: 'https://play.google.com/store/apps/details?id=com.baby_care',
       featured: true
     }
   ];
