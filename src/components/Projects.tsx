@@ -94,7 +94,7 @@ export default function Projects() {
       description: 'Comprehensive healthcare platform connecting patients with medical professionals for better health outcomes.',
       longDescription: 'Plumm revolutionizes healthcare delivery by providing seamless access to medical consultations, health tracking, and care management. Features include telemedicine, health analytics, appointment scheduling, and integrated care coordination.',
       tech: ['React Native', 'Node.js', 'MongoDB', 'Firebase', 'WebRTC', 'HealthKit'],
-      images: ['/projects/auth.png', '/projects/onboarding.png', '/projects/product.png', '/projects/response.png'],
+      images: ['/projects/plummOne.png', '/projects/plummTwo.png', '/projects/plummThree.png', '/projects/plummFour.png'],
       category: 'mobile',
       status: 'Live',
       timeline: '8 months',
@@ -111,7 +111,7 @@ export default function Projects() {
       description: 'Comprehensive fitness and wellness application with personalized workout plans and health tracking.',
       longDescription: 'A complete fitness ecosystem that provides personalized workout routines, nutrition tracking, and wellness coaching. Features AI-powered recommendations, social challenges, and comprehensive health analytics.',
       tech: ['React Native', 'Firebase', 'HealthKit', 'Google Fit', 'Machine Learning', 'Redux'],
-      images: ['/projects/assignment.png', '/projects/chat.png', '/projects/profile.png'],
+      images: ['/projects/betterlivingfitnessOne.png', '/projects/betterlivingfitnessTwo.png', '/projects/betterlivingfitnessThree.png'],
       category: 'mobile',
       status: 'Live',
       timeline: '6 months',
@@ -128,6 +128,7 @@ export default function Projects() {
       description: 'Full-stack healthcare platform for long COVID patients with web portal, iOS and Android mobile apps.',
       longDescription: 'Revolutionary full-stack platform designed specifically for long COVID patients, providing comprehensive symptom tracking, personalized care plans, and connection with specialized healthcare providers. Available as web platform, iOS app, and Android app with real-time health monitoring and evidence-based treatment protocols.',
       tech: ['React Native', 'Node.js', 'PostgreSQL', 'HealthKit', 'Analytics', 'WebRTC', 'Next.js'],
+      images: ['/projects/meohealthOne.png', '/projects/meohealthTwo.png', '/projects/meohealthWebOne.png', '/projects/meohealthWebTwo.png', '/projects/meohealthWebThree.png'],
       status: 'Live',
       timeline: '10 months',
       role: 'Full-Stack Developer',
@@ -140,11 +141,12 @@ export default function Projects() {
       featured: true
     },
     {
-      id: 15,
+      id: 12,
       title: 'Grant Dashboard - Blockchain Management',
       description: 'Comprehensive grant management dashboard for blockchain-based funding programs with real-time analytics.',
       longDescription: 'Professional web dashboard for managing blockchain grant programs, featuring real-time transaction monitoring, applicant management, funding distribution tracking, and comprehensive analytics for grant administrators and stakeholders.',
       tech: ['React.js', 'TypeScript', 'Web3.js', 'Chart.js', 'Material-UI', 'Redux'],
+      images: ['/projects/granddashboardWebOne.png', '/projects/grantdashboardWebTwo.png'],
       category: 'web',
       status: 'Live',
       timeline: '5 months',
@@ -160,6 +162,7 @@ export default function Projects() {
       description: 'Professional HVAC services, compliance management, and documentation platform for facility management.',
       longDescription: 'Comprehensive facility management solution for HVAC professionals, featuring service scheduling, compliance tracking, documentation management, and real-time reporting. Streamlines operations for commercial and residential HVAC services.',
       tech: ['React Native', 'Node.js', 'MongoDB', 'Cloud Storage', 'Push Notifications', 'GPS'],
+      images: ['/projects/fmheroOne.png', '/projects/fmheroTwo.png', '/projects/fmheroThree.png'],
       category: 'mobile',
       status: 'Live',
       timeline: '7 months',
@@ -172,42 +175,11 @@ export default function Projects() {
     },
     {
       id: 5,
-      title: 'Yukon Baby - Pregnancy App',
-      description: 'Comprehensive pregnancy tracking app with tips, measurements, and developmental milestones.',
-      longDescription: 'Complete pregnancy companion providing week-by-week guidance, health tracking, appointment scheduling, and developmental insights. Features personalized content, community support, and healthcare provider integration.',
-      tech: ['React Native', 'Firebase', 'HealthKit', 'Push Notifications', 'Analytics', 'Cloud Storage'],
-      category: 'mobile',
-      status: 'Live',
-      timeline: '5 months',
-      role: 'Full Stack Developer',
-      challenges: ['Health data privacy', 'Content personalization', 'Medical accuracy', 'User engagement'],
-      results: ['25K+ downloads', '4.7 star rating', 'Healthcare partnerships', 'Positive user feedback'],
-      liveUrl: 'https://apps.apple.com/ch/app/yukon-baby-app/id1620034444?l=en',
-      androidUrl: 'https://play.google.com/store/apps/details?id=com.yukonbaby',
-      featured: true
-    },
-    {
-      id: 6,
-      title: 'Real Freedom Platform',
-      description: 'Financial freedom and investment education platform with tools and community features.',
-      longDescription: 'Comprehensive financial education and investment platform providing courses, tools, and community support for achieving financial independence. Features investment tracking, educational content, and mentor connections.',
-      tech: ['React Native', 'Node.js', 'PostgreSQL', 'Payment APIs', 'Analytics', 'Video Streaming'],
-      category: 'mobile',
-      status: 'Live',
-      timeline: '9 months',
-      role: 'Full Stack Developer',
-      challenges: ['Payment processing', 'Video streaming', 'User engagement', 'Content management'],
-      results: ['15K+ users', 'Course completions', 'Community growth', 'Revenue generation'],
-      liveUrl: 'https://apps.apple.com/us/app/real-freedom-platform/id1530268555',
-      androidUrl: 'https://play.google.com/store/apps/details?id=com.rfmobileapp',
-      featured: true
-    },
-    {
-      id: 7,
       title: 'Baby Care - Health & Development',
       description: 'Comprehensive baby care application for tracking health, development, and milestones.',
       longDescription: 'Complete baby care solution providing health tracking, developmental milestone monitoring, feeding schedules, and pediatric guidance. Features growth charts, vaccination reminders, and healthcare provider connectivity.',
       tech: ['Android Kotlin', 'Jetpack Compose', 'Room Database', 'Firebase', 'HealthKit'],
+      images: ['/projects/babycareOne.png', '/projects/babycareTwo.png', '/projects/babycareThree.png'],
       category: 'android',
       status: 'Live',
       timeline: '4 months',
@@ -218,7 +190,7 @@ export default function Projects() {
       featured: true
     },
     {
-      id: 8,
+      id: 6,
       title: 'Baby Care Backend API',
       description: 'Scalable Node.js backend API powering baby care application with health tracking and pediatric data management.',
       longDescription: 'Robust backend infrastructure supporting the Baby Care mobile app with secure data storage, pediatric growth charts, vaccination schedules, and healthcare provider integration. Built with Node.js and MongoDB for optimal performance.',
@@ -233,7 +205,7 @@ export default function Projects() {
       featured: true
     },
     {
-      id: 9,
+      id: 7,
       title: 'UCare Skin Backend API',
       description: 'Advanced skincare platform backend with AI-powered skin analysis and personalized treatment recommendations.',
       longDescription: 'Sophisticated backend system powering a skincare platform with machine learning algorithms for skin analysis, treatment tracking, and personalized product recommendations. Features secure user management and real-time data processing.',
@@ -248,7 +220,7 @@ export default function Projects() {
       featured: true
     },
     {
-      id: 10,
+      id: 8,
       title: 'Stacks Grant Platform Backend',
       description: 'Blockchain grant management system backend with smart contract integration and automated funding workflows.',
       longDescription: 'Enterprise-grade backend for blockchain-based grant management platform. Handles crypto transactions, smart contract interactions, automated funding distributions, and compliance reporting for decentralized grant programs.',
@@ -263,7 +235,7 @@ export default function Projects() {
       featured: true
     },
     {
-      id: 12,
+      id: 9,
       title: 'UCare Skin Production API',
       description: 'Production-grade skincare platform API serving global users with advanced dermatological features and analytics.',
       longDescription: 'High-performance production API for the UCare Skin platform serving users worldwide. Features advanced skincare analysis, product recommendations, dermatologist consultations, and comprehensive user analytics.',
@@ -278,11 +250,12 @@ export default function Projects() {
       featured: true
     },
     {
-      id: 13,
+      id: 10,
       title: 'CropWise - Smart Agriculture Platform',
       description: 'Revolutionary AgriTech mobile platform for smart farming with IoT integration and crop management.',
       longDescription: 'Advanced agriculture management application that empowers farmers with real-time crop monitoring, weather predictions, and data-driven farming decisions. Features IoT sensor integration, crop disease detection, and yield optimization recommendations.',
       tech: ['Android Kotlin', 'Jetpack Compose', 'IoT Integration', 'Machine Learning', 'Firebase', 'GPS'],
+      images: ['/projects/cropwiseOne.png', '/projects/cropwiseTwo.png'],
       category: 'android',
       status: 'Live',
       timeline: '7 months',
@@ -293,11 +266,12 @@ export default function Projects() {
       featured: true
     },
     {
-      id: 14,
+      id: 11,
       title: 'Pixel Dancer - Photo Editor',
       description: 'Advanced photo editing and animation app with professional-grade features and modern UI.',
       longDescription: 'Professional photo editing platform bringing desktop-quality features to mobile devices. Features advanced filters, animations, AI-powered enhancements, and cloud synchronization for creative professionals and enthusiasts.',
       tech: ['Android Kotlin', 'Jetpack Compose', 'OpenGL', 'Machine Learning', 'Cloud Storage'],
+      images: ['/projects/pixeldancerOne.png', '/projects/pixeldancerTwo.png', '/projects/pixeldancerThree.png'],
       category: 'android',
       status: 'Live',
       timeline: '6 months',
