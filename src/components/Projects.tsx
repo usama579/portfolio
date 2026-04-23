@@ -47,7 +47,7 @@ const ProjectImageCarousel = ({ images, title }: { images: string[], title: stri
           width={300}
           height={600}
           className="max-h-full max-w-full object-contain rounded-lg shadow-2xl"
-          sizes="300px"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px"
         />
       </div>
 
