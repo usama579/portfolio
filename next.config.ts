@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
+const repoName = "usama-portfolio";
+
 const nextConfig: NextConfig = {
-  output: 'export',
+  output: "export",
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
+  images: { unoptimized: true },
 };
 
 export default nextConfig;
