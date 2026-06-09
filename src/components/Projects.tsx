@@ -27,6 +27,8 @@ const staggerContainer = {
   }
 };
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
 const ProjectImageCarousel = ({ images, title }: { images: string[], title: string }) => {
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -42,7 +44,7 @@ const ProjectImageCarousel = ({ images, title }: { images: string[], title: stri
     <div className="relative h-80 bg-gray-900 rounded-lg overflow-hidden group">
       <div className="relative w-full h-full flex items-center justify-center p-4">
         <Image
-          src={images[currentImage]}
+          src={`${basePath}${images[currentImage]}`}
           alt={`${title} screenshot ${currentImage + 1}`}
           width={300}
           height={600}
