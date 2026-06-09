@@ -62,7 +62,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
    pnpm dev
    ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
+5. Open [http://localhost:3000/portfolio](http://localhost:3000/portfolio) in your browser
 
 ## 📁 Project Structure
 
