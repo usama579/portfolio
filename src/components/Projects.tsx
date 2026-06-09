@@ -27,7 +27,12 @@ const staggerContainer = {
   }
 };
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+// Unoptimized <Image> does not get basePath applied automatically, so prefix
+// static asset paths manually for correct loading on GitHub Pages subpaths.
+// Hardcoded (not read from env) because the GitHub Pages build step rewrites
+// the Next config and NEXT_PUBLIC_BASE_PATH isn't reliably inlined in CI.
+// Must match `basePath` in next.config.ts (the repo name).
+const basePath = '/portfolio';
 
 const ProjectImageCarousel = ({ images, title }: { images: string[], title: string }) => {
   const [currentImage, setCurrentImage] = useState(0);
